@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*------------------------------------*/
+.container {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	max-width: 1440px;
+}
+
+* {
+	font-family: Gilroy, sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+body {
+	background-color: #403C3B;
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100px;
+	background-color: #403C3B;
+}
+header .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 0 70px;
+}
+
+main {
+	padding-top: 100px;
+}
+
+.header__logo img {
+	margin: 0px 0px 0px 27px;
+}
+
+.header__search {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	max-width: 555px;
+	margin: 0px 0px 0px -34px;
+}
+
+.search-field {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	max-width: 555px;
+	height: 52px;
+	border-radius: 10px;
+	padding: 0 15px;
+	background-color: #504B4A;
+}
+.search-field input {
+	font-family: Gilroy, sans-serif;
+	background-color: #504B4A;
+	color: #CFCFCF;
+	width: 100%;
+	margin: 10px;
+	outline: none;
+}
+
+.header__contacts {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0px 0px 0px 0px;
+}
+.header__contacts p {
+	font-size: 12px;
+	color: #CFCFCF;
+}
+.header__contacts p a {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contact__ico {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	margin: 0 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#618967), to(#72A479));
+	background: linear-gradient(#618967, #72A479);
+}
+
+.contact__ico:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#709e77), to(#82bb8a));
+	background: linear-gradient(#709e77, #82bb8a);
+}
+
+.contact__area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.header__cart {
+	position: relative;
+}
+
+.cart-btn {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-weight: 500;
+	font-size: 14px;
+	width: 150px;
+	height: 52px;
+	border-radius: 10px;
+	padding: 25px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#618967), to(#72A479));
+	background: linear-gradient(#618967, #72A479);
+	-webkit-transition: all 0.4s ease-in 0.4s;
+	transition: all 0.4s ease-in 0.4s;
+}
+.cart-btn p {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.cart-btn:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#709e77), to(#82bb8a));
+	background: linear-gradient(#709e77, #82bb8a);
+}
+
+.line {
+	position: relative;
+	font-weight: 100;
+	font-size: 40px;
+	top: -2px;
+}
+
+.cart-num {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #000;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #fff;
+	border: solid 1px #fff;
+	border-radius: 10px;
+	padding: 1px 6px 1px 6px;
+}
+
+.intro .container {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.intro__pic {
+	position: relative;
+	width: 100%;
+	height: 484px;
+}
+.intro__pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.intro_bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0)));
+	background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0));
+}
+
+.intro__area {
+	position: absolute;
+	top: 0;
+}
+.intro__area p {
+	font-family: Zing, sans-serif;
+	font-weight: 900;
+	font-size: 67px;
+}
+.intro__area #intro-border {
+	color: transparent;
+	-webkit-text-stroke: 1px, #fff;
+}
