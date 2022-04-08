@@ -27,4 +27,5 @@ document.getElementById("foodlist")
       this.scrollLeft += modifier * event.deltaY;
       event.preventDefault();
     }
-  });
+});
+
