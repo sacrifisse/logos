@@ -129,7 +129,11 @@ header {
 
 .contact__area {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .header__cart {
@@ -195,6 +199,8 @@ header {
 
 .intro {
 
+    background-color: #211F20;
+
     .container {
         margin: 0 auto;
         padding: 0;
@@ -218,10 +224,20 @@ header {
 
 .intro_bg {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
 
-    background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0));
+    background: linear-gradient(90deg, #211F20, rgba(0, 0, 0, 0));
+}
+
+.intro_bg2 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+
+    right: 0;
+
+    background: linear-gradient(270deg, #211F20, rgba(0, 0, 0, 0));
 }
 
 .intro-text {
@@ -239,19 +255,55 @@ header {
 // FOOD MENU
 
 .food-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 80px;
+    
+    z-index: 10;
+
+    background-color: #403C3B;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    border-top: solid 1px rgba(255, 255, 255, 0.1);
 
     .container {
+        height: 100%;
     }
 }
 
-.food-menu__nav {
-
-}
-
 .food-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
+    height: 100%;
 }
 
 .food-menu__item {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    color: #CFCFCF;
+}
+
+.food-menu__item:hover,
+.food-menu__item:active {
+    color: #fff;
+    border-bottom: 3px solid #618967;
+    transition: 0.1s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + main {
+    padding-top: 100px;
 }
