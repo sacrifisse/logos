@@ -345,6 +345,7 @@ header .container {
 	width: 100%;
 	min-height: 80px;
 	z-index: 15;
+	background-color: #403C3B;
 }
 .food-menu .container {
 	position: relative;
