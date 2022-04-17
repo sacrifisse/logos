@@ -380,6 +380,7 @@ header .container {
 .scroll__cart {
 	position: relative;
 	right: 20px;
+	z-index: 20;
 }
 
 .food-menu__navwrap {
