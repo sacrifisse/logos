@@ -427,6 +427,202 @@ header .container {
 	transition: 0.1s;
 }
 
+.food__title {
+	position: relative;
+	margin: 100px 0px 100px 200px;
+}
+.food__title a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.food__title a img {
+	margin: 0px 10px 0px 0px;
+}
+.food__title h1 {
+	margin-left: 20px;
+}
+
+.food__title::before {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 30px;
+	top: 35px;
+	left: 0px;
+	background-color: #618967;
+}
+
+.main-forms {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 100px 0px;
+}
+.main-forms .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.form-body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 30px;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	border-radius: 10px;
+	margin: 10px;
+	background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
+	background: linear-gradient(90deg, #494544, #504B4A);
+}
+.form-body form {
+	width: 100%;
+}
+.form-body form input, .form-body form select {
+	height: 60px;
+	background-color: transparent;
+	color: #CFCFCF;
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 5px;
+}
+.form-body form input option, .form-body form select option {
+	height: 60px;
+	background-color: transparent;
+	color: #CFCFCF;
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+}
+.form-body form input:focus,
+.form-body form select:focus {
+	outline: none;
+}
+.form-body h3 {
+	margin: 0px 0px 40px 0px;
+}
+
+#form-body1 form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+#form-body1 form input {
+	width: 100%;
+}
+
+#form-body2 form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 80%;
+}
+#form-body2 form input {
+	width: 98%;
+}
+
+#form-body3 form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 20%;
+}
+
+#form-body4 form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 35%;
+}
+
+#form-body5 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#form-body5 form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 70%;
+}
+
+.form-string {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
 footer {
 	display: -webkit-box;
 	display: -ms-flexbox;

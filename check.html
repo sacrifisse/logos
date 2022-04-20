@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Cart // logos</title>
+	<title>Order // logos</title>
 
 	<link rel="shortcut icon" href="">
 	<link rel="stylesheet" href="css/check.css">
@@ -77,6 +77,124 @@
 		</div>
 </section>
 
+<main>
+
+	<div class="container">
+		<div class="food__title">
+			<a href="cart.html"><img src="img/icons/arrow-left.svg" alt=""> в корзину</a>
+			<h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+		</div>
+	</div>
+
+	<section class="main-forms">
+		<div class="container">
+			<div class="form-body" id="form-body1">
+				<h3>1. Контактная информация</h3>
+				<form action="" method="post">
+					<input type="text" placeholder="Имя *" required>
+					<input type="tel" placeholder="Телефон *" required>
+				</form>
+			</div>
+			<div class="form-body" id="form-body2">
+				<h3>2. Доставка</h3>
+				<form action="" method="post" class="form_toggle">
+					<div class="form_toggle-item item-1">
+						<label for="dosta" >Доставка</label>
+						<input type="radio" name="dost" id="dosta" checked>
+					</div>
+					<div class="form_toggle-item item-2">
+						<label for="samo">Самовывоз</label>
+						<input type="radio" name="dost" id="samo">
+					</div>
+				</form>
+				<p class="dost-time">
+					<img src="img/icons/clock.svg" alt="">
+					Доставим через  1 час 30 минут
+				</p>
+				<div id="dostavka">
+					<h3>Адрес доставки</h3>
+					<form action="" method="post">
+						<div class="form-string">
+							<input type="text" placeholder="Улица *" required>
+							<input type="text" placeholder="Дом *" required>
+						</div>
+						<div class="form-string">
+							<input type="number" placeholder="Квартира/офис">
+							<input type="number" placeholder="Подъезд">
+							<input type="number" placeholder="Этаж">
+						</div>
+						<input type="text" placeholder="Комментарий">
+					</form>
+				</div>
+				<div id="samovivoz">
+					<h3>Выберите ресторан</h3>
+					<form action="" method="post">
+						<select name="rest" id="rest-list" aria-placeholder="Выберите ресторан" required>
+							<option value="1">Добролюбова, 12</option>
+							<option value="2">Ленина, 22</option>
+							<option value="3">Октябрьская, 14б</option>
+						</select>
+					</form>
+				</div>
+			</div>
+			<div class="form-body" id="form-body3">
+				<h3>3. Оплата</h3>
+				<form action="" method="post" class="form_toggle">
+					<div class="form_toggle-item item-1">
+						<label for="pay">Картой</label>
+						<input type="radio" name="pay" id="car" checked>
+					</div>
+					<div class="form_toggle-item item-2">
+						<label for="pay">Наличными</label>
+						<input type="radio" name="pay" id="nal">
+					</div>
+				</form>
+				<div id="cartoi">
+					Курьер привезёт терминал для оплаты картой
+				</div>
+				<div id="nalichnimy">
+					<form action="" method="post">
+						<input type="text" placeholder="Сдача с">
+					</form>
+				</div>
+			</div>
+			<div class="form-body" id="form-body4">
+				<h3>4. Время</h3>
+				<form action="" method="post" class="form_toggle">
+					<div class="form_toggle-item item-1">
+						<label for="time">Как можно быстрее</label>
+						<input type="radio" name="time" id="bis" checked>
+					</div>
+					<div class="form_toggle-item item-2">
+						<label for="time">Ко времени</label>
+						<input type="radio" name="time" id="nebis">
+					</div>
+				</form>
+				<div id="bistro">
+					<form action="" method="post">
+						<input type="number" name="" id="" placeholder="Кол-во персон">
+					</form>
+				</div>
+				<div id="nebistro">
+					<form action="" method="post">
+						<label for="timearea">Укажите время</label>
+						<input type="date" name="timearea" id="">
+						<input type="number" name="" id="" placeholder="Кол-во персон">
+					</form>
+				</div>
+			</div>
+			<div class="form-body" id="form-body5">
+				<form action="" method="post">
+					<input type="checkbox" name="personal" id="">
+					<label for="personal">Я согласен на обработку моих персональных данных</label>
+				</form>
+				<button class="zakaz-btn">Оформить заказ</button>
+			</div>
+		</div>
+
+	</section>
+
+</main>
 
 
 

@@ -25,7 +25,7 @@ body {
 	height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -312,7 +312,171 @@ header {
 
 }
 
+// FOOD TITLE 
 
+.food__title {
+    position: relative;
+    margin: 100px 0px 100px 200px;
+
+	a {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		img {
+			margin: 0px 10px 0px 0px;
+		}
+	}
+
+	h1 {
+		margin-left: 20px;
+	}
+}
+
+.food__title::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 30px;
+    top: 35px;
+    left: 0px;
+    background-color: #618967;
+}
+
+// MAIN FORMS
+
+.main-forms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: auto;
+
+	padding: 0px 0px 100px 0px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+
+	padding: 30px;
+
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+
+	border-radius: 10px;
+
+	margin: 10px;
+
+
+	background: linear-gradient(90deg, #494544, #504B4A);
+
+	form {
+		width: 100%;
+
+		input, select {
+			height: 60px;
+			background-color: transparent;
+			color: #CFCFCF;
+
+			border: solid 1px rgba(255, 255, 255, 0.1);
+			border-radius: 10px;
+			padding: 20px;
+
+			margin: 5px;
+
+			option {
+				height: 60px;
+				background-color: transparent;
+				color: #CFCFCF;
+
+				border: solid 1px rgba(255, 255, 255, 0.1);
+				border-radius: 10px;
+				padding: 20px;
+			}
+
+		}
+		input:focus,
+		select:focus {
+			outline: none;
+		}
+	}
+
+	h3 {
+		margin: 0px 0px 40px 0px;
+	}
+}
+
+#form-body1 {
+	form {
+		display: flex;
+		flex-direction: row;
+		input {
+			width: 100%;
+		}
+	}
+}
+#form-body2 {
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		input {
+			width: 98%;
+		}
+	}
+}
+	
+#form-body3 {
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+	}
+}
+#form-body4 {
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+	}
+}
+#form-body5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	form {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 70%;
+	}
+}
+
+.f
+
+.dost-time {
+
+}
+
+.form-string {
+	display: flex;
+	flex-direction: row;
+}
+
+.zakaz-btn {
+	
+}
 
 
 
