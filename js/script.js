@@ -16,6 +16,8 @@
     }
 })();
 
+
+
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("foodmenu");
@@ -31,22 +33,6 @@ function myFunction() {
 }
 
 
-$(document).ready(function() { 
-  var button = $('#button-up');	
-  $(window).scroll (function () {
-    if ($(this).scrollTop () > 300) {
-      button.fadeIn();
-    } else {
-      button.fadeOut();
-    }
-});	 
-button.on('click', function(){
-$('body, html').animate({
-scrollTop: 0
-}, 800);
-return false;
-});		 
-});
 
 $('input[name="delivery"]').click(function(){
 	var target = $('#block-' + $(this).val());
@@ -65,4 +51,14 @@ $('input[name="delivery-time"]').click(function(){
  
 	$('.block-text3').not(target).hide(0);
 	target.fadeIn(500);
+});
+
+
+
+$(document).ready(function() {
+  $('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__nav').toggleClass('open-menu');
+        $('body').toggleClass('fixed-page');
+  });
 });
