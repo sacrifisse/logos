@@ -1244,5 +1244,47 @@ footer {
 		margin: 0;
 	}
 
-	
+}
+
+@media (max-width:520px) {
+	.food__title {
+		margin-left: 20px;
+	}
+	.container {
+		max-width: 300px;
+	}
+	.us {
+		display: none;
+	}
+	.contacts__content {
+		top: 20px;
+	}
+	.big-card__body {
+		flex-direction: column;	
+		width: 100%;
+		height: auto;
+	}
+	.big-card__pic {
+		width: 100%;
+		height: 200px;
+		img {
+			border-radius: 10px 10px 0px 0px;
+		}
+	}
+	.bju__item {
+		margin: 10px 8px;
+		font-size: 11px;	
+		p {
+			font-size: 10px;
+		}
+	}
+	.footer__nav {
+		display: none;
+	}
+	#button-up {
+		display: none;
+	}
+	#foodmenu {
+		display: none;
+	}
 }
