@@ -29,3 +29,22 @@ scrollTop: 0
 return false;
 });		 
 });
+
+$('input[name="delivery"]').click(function(){
+	var target = $('#block-' + $(this).val());
+ 
+	$('.block-text').not(target).hide(0);
+	target.fadeIn(500);
+});
+$('input[name="pay"]').click(function(){
+	var target = $('#block-' + $(this).val());
+ 
+	$('.block-text2').not(target).hide(0);
+	target.fadeIn(500);
+});
+$('input[name="delivery-time"]').click(function(){
+	var target = $('#block-' + $(this).val());
+ 
+	$('.block-text3').not(target).hide(0);
+	target.fadeIn(500);
+});

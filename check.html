@@ -97,21 +97,23 @@
 			</div>
 			<div class="form-body" id="form-body2">
 				<h3>2. Доставка</h3>
-				<form action="" method="post" class="form_toggle">
-					<div class="form_toggle-item item-1">
-						<label for="dosta" >Доставка</label>
-						<input type="radio" name="dost" id="dosta" checked>
+				<div class="form-string">
+					<div class="form_radio_group">
+						<div class="form_radio_group-item">
+							<input id="deliv-1" type="radio" name="delivery" value="1" checked>
+							<label for="deliv-1">Доставка</label>
+						</div>
+						<div class="form_radio_group-item">
+							<input id="deliv-2" type="radio" name="delivery" value="2">
+							<label for="deliv-2">Самовывоз</label>
+						</div>
 					</div>
-					<div class="form_toggle-item item-2">
-						<label for="samo">Самовывоз</label>
-						<input type="radio" name="dost" id="samo">
-					</div>
-				</form>
-				<p class="dost-time">
-					<img src="img/icons/clock.svg" alt="">
-					Доставим через  1 час 30 минут
-				</p>
-				<div id="dostavka">
+					<p class="dost-time">
+						<img src="img/icons/clock.svg" alt="">
+						Доставим через  1 час 30 минут
+					</p>
+				</div>
+				<div class="block-text" id="block-1">
 					<h3>Адрес доставки</h3>
 					<form action="" method="post">
 						<div class="form-string">
@@ -126,7 +128,7 @@
 						<input type="text" placeholder="Комментарий">
 					</form>
 				</div>
-				<div id="samovivoz">
+				<div class="block-text" id="block-2">
 					<h3>Выберите ресторан</h3>
 					<form action="" method="post">
 						<select name="rest" id="rest-list" aria-placeholder="Выберите ресторан" required>
@@ -139,20 +141,22 @@
 			</div>
 			<div class="form-body" id="form-body3">
 				<h3>3. Оплата</h3>
-				<form action="" method="post" class="form_toggle">
-					<div class="form_toggle-item item-1">
-						<label for="pay">Картой</label>
-						<input type="radio" name="pay" id="car" checked>
+
+				<div class="form_radio_group">
+					<div class="form_radio_group-item">
+						<input id="pay-1" type="radio" name="pay" value="3" checked>
+						<label for="pay-1">Картой</label>
 					</div>
-					<div class="form_toggle-item item-2">
-						<label for="pay">Наличными</label>
-						<input type="radio" name="pay" id="nal">
+					<div class="form_radio_group-item">
+						<input id="pay-2" type="radio" name="pay" value="4">
+						<label for="pay-2">Наличными</label>
 					</div>
-				</form>
-				<div id="cartoi">
+				</div>
+
+				<div class="block-text2" id="block-3">
 					Курьер привезёт терминал для оплаты картой
 				</div>
-				<div id="nalichnimy">
+				<div class="block-text2" id="block-4">
 					<form action="" method="post">
 						<input type="text" placeholder="Сдача с">
 					</form>
@@ -160,22 +164,22 @@
 			</div>
 			<div class="form-body" id="form-body4">
 				<h3>4. Время</h3>
-				<form action="" method="post" class="form_toggle">
-					<div class="form_toggle-item item-1">
-						<label for="time">Как можно быстрее</label>
-						<input type="radio" name="time" id="bis" checked>
+				<div class="form_radio_group">
+					<div class="form_radio_group-item">
+						<input id="time-1" type="radio" name="delivery-time" value="5" checked>
+						<label for="time-1">Как можно быстрее</label>
 					</div>
-					<div class="form_toggle-item item-2">
-						<label for="time">Ко времени</label>
-						<input type="radio" name="time" id="nebis">
+					<div class="form_radio_group-item">
+						<input id="time-2" type="radio" name="delivery-time" value="6">
+						<label for="time-2">Ко времени</label>
 					</div>
-				</form>
-				<div id="bistro">
+				</div>
+				<div class="block-text3" id="block-5">
 					<form action="" method="post">
 						<input type="number" name="" id="" placeholder="Кол-во персон">
 					</form>
 				</div>
-				<div id="nebistro">
+				<div class="block-text3" id="block-6">
 					<form action="" method="post">
 						<label for="timearea">Укажите время</label>
 						<input type="date" name="timearea" id="">
@@ -185,13 +189,12 @@
 			</div>
 			<div class="form-body" id="form-body5">
 				<form action="" method="post">
-					<input type="checkbox" name="personal" id="">
-					<label for="personal">Я согласен на обработку моих персональных данных</label>
+					<input type="checkbox" name="personal" id="" required>
+					<label for="personal">Я согласен на обработку моих персональных данных *</label>
 				</form>
-				<button class="zakaz-btn">Оформить заказ</button>
+				<button type="submit" class="zakaz-btn">Оформить заказ</button>
 			</div>
 		</div>
-
 	</section>
 
 </main>
