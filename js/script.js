@@ -1,3 +1,21 @@
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('horizontal-scroller').scrollLeft -= (delta*40); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('horizontal-scroller').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('horizontal-scroller').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('horizontal-scroller').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('horizontal-scroller').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("foodmenu");
