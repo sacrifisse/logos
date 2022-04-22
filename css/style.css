@@ -1682,6 +1682,14 @@ footer .container {
 		display: none;
 	}
 
+	.food-menu {
+		display: none;
+	}
+
+	.sticky {
+		display: none;
+	}
+
 	.header__contacts {
 		display: none;
 	}
@@ -1710,7 +1718,7 @@ footer .container {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		padding: 0px 40px;
+		padding: 0px 20px;
 	}
 
 	.cart-btn {
@@ -1732,6 +1740,10 @@ footer .container {
 		max-width: 300px;
 	}
 
+	.big-card .container {
+		max-width: none;
+	}
+
 	.us {
 		display: none;
 	}
@@ -1751,7 +1763,7 @@ footer .container {
 
 	.big-card__pic {
 		width: 100%;
-		height: 200px;
+		height: 300px;
 	}
 	.big-card__pic img {
 		border-radius: 10px 10px 0px 0px;
