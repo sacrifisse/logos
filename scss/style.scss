@@ -1082,7 +1082,7 @@ footer {
 
 .header__menu li {
 	list-style: none;
-	margin: 10px;
+	margin: 5px;
 	
 }
 
@@ -1105,7 +1105,7 @@ footer {
 		left:-100%;
 		
 	}
-
+	
 	.header__menu {
 		display: block;
 		background-color: #403C3B;
@@ -1114,7 +1114,7 @@ footer {
 
 	.menu.header__menu {
 		background-color: #403C3B;
-		padding: 40px;
+		padding: 30px;
 	}
 
 	.header__nav.open-menu{
@@ -1123,7 +1123,7 @@ footer {
 	}
 
 	.header__menu li {
-		margin: 30px;
+		margin: 25px;
 		
 	}
 
@@ -1144,6 +1144,7 @@ footer {
 		position: absolute;
 		background: #709e77;
 		margin: 0 auto;
+		border-radius: 5px;
 	}
 	
 	.menu-burger__header span{
@@ -1158,12 +1159,13 @@ footer {
 
 	.menu-burger__header:after{
 		bottom: 5px;
+		border-radius: 5px;
 
 	}
 
 	.menu-burger__header:before{
 		top: 5px;
-
+		border-radius: 5px;
 	}
 
 	.menu-burger__header.open-menu span {
@@ -1360,6 +1362,15 @@ footer {
 	.header__search {
 		display: none;
 	}
+	.contacts__bottom__area {
+		flex-direction: column;
+		a {
+			margin: 5px 0;
+		}
+	}
+	.contacts__content {
+		width: 100%;
+	}
 }
 
 @media (max-width:520px) {
@@ -1373,6 +1384,12 @@ footer {
 	.cart-btn {
 		width: auto;
 		margin-left: 10px;
+		.cart-num {
+			display: none;
+		}
+		.line {
+			display: none;
+		}
 	}
 	
 	.food__title {
