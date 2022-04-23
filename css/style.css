@@ -1711,6 +1711,35 @@ footer .container {
 	.contacts__content {
 		width: 100%;
 	}
+
+	.big-card .container {
+		max-width: none;
+	}
+
+	.big-card__body {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.big-card__pic {
+		width: 100%;
+		height: 300px;
+	}
+	.big-card__pic img {
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	.bju__item {
+		margin: 10px 8px;
+		font-size: 11px;
+	}
+	.bju__item p {
+		font-size: 10px;
+	}
 }
 @media (max-width: 520px) {
 	header .container {
@@ -1740,41 +1769,12 @@ footer .container {
 		max-width: 300px;
 	}
 
-	.big-card .container {
-		max-width: none;
-	}
-
 	.us {
 		display: none;
 	}
 
 	.contacts__content {
 		top: 20px;
-	}
-
-	.big-card__body {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		width: 100%;
-		height: auto;
-	}
-
-	.big-card__pic {
-		width: 100%;
-		height: 300px;
-	}
-	.big-card__pic img {
-		border-radius: 10px 10px 0px 0px;
-	}
-
-	.bju__item {
-		margin: 10px 8px;
-		font-size: 11px;
-	}
-	.bju__item p {
-		font-size: 10px;
 	}
 
 	.footer__nav {
