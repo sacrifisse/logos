@@ -17,64 +17,76 @@
 </head>
 <body>
 
-<header>
-        <div class="container">
-            <div class="header__logo">
-                <a href="index.html"><img src="img/logo.svg" alt=""></a>
-            </div>
-            <div class="header__search">
-                <div class="search-field">
-                    <a href="#"><img src="img/icons/location.svg" alt=""></a>
-                    <input type="text" name="" id="" placeholder="Введите адрес доставки">
-                    <a href="#"><img src="img/icons/search.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="header__contacts">
-                <a href="tel:+79175105759">
-                <div class="contact__ico">
-                    <img src="img/icons/call.svg" alt="">
-                </div>
-            </a>
-                <div class="contact__area">
-                    <p>Контакты:</p>
-                    <p><a href="tel:+79175105759">+7 (917) 510-57-59</a></p>
-                </div>
-            </div>
-            <div class="header__cart">
-                <a href="cart.html" class="cart-btn">
-                    <p>Корзина</p>
-                    <div class="line">|</div>
-                    <div class="cart-num">0</div>
-                </a>
-            </div>
-			<div class="header__auto">
-				<a href="#">
-					<img src="img/icons/profile.svg" alt="">
+	<header>
+
+		<div class ="header__container">
+			<div class ="menu-burger__header">
+				<span></span>
+			</div>
+	
+			<nav class ="header__nav">
+				<ul class ="menu header__menu">
+					<li><a href="/logos/#cold" class="food-menu__item">Холодные закуски</a></li>
+					<li><a href="/logos/#hot" class="food-menu__item">Горячие закуски</a></li>
+					<li><a href="/logos/#meat" class="food-menu__item">Мясные блюда</a></li>
+					<li><a href="/logos/#soup" class="food-menu__item">Супы</a></li>
+					<li><a href="/logos/#fish" class="food-menu__item">Рыбные блюда</a></li>
+					<li><a href="/logos/#grill" class="food-menu__item">Гриль меню</a></li>
+					<li><a href="/logos/#firm" class="food-menu__item">Фирменные блюда</a></li>
+					<li><a href="/logos/#drink" class="food-menu__item">Напитки</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+		<div class="container">
+			<div class="header__logo">
+				<a href="#"><img src="img/logo.svg" alt=""></a>
+			</div>
+			<div class="header__search">
+				<div class="search-field">
+					<a href="#"><img src="img/icons/location.svg" alt=""></a>
+					<input type="text" name="" id="" placeholder="Введите адрес доставки">
+					<a href="#"><img src="img/icons/search.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="header__contacts">
+				<a href="tel:+79175105759">
+				<div class="contact__ico">
+					<img src="img/icons/call.svg" alt="">
+				</div>
 				</a>
-				<a href="#">
-					Войти
+				<div class="contact__area">
+					<p>Контакты:</p>
+					<p><a href="tel:+79175105759">+7 (917) 510-57-59</a></p>
+				</div>
+			</div>
+			<div class="header__cart">
+				<a href="cart.html" class="cart-btn">
+					<p>Корзина</p>
+					<div class="line">|</div>
+					<div class="cart-num">0</div>
 				</a>
 			</div>
-        </div>
+		</div>
 </header>
 
 <section id="foodmenu">
+	<div class="container">
 		<div class="food-menu">
-			<div class="container">
-				<div class="food-menu__navwrap">
-					<nav class="food-menu__nav scrollto">
-						<a href="/logos/#cold" class="food-menu__item">Холодные закуски</a>
-						<a href="/logos/#hot" class="food-menu__item">Горячие закуски</a>
-						<a href="/logos/#meat" class="food-menu__item">Мясные блюда</a>
-						<a href="/logos/#soup" class="food-menu__item">Супы</a>
-						<a href="/logos/#fish" class="food-menu__item">Рыбные блюда</a>
-						<a href="/logos/#grill" class="food-menu__item">Гриль меню</a>
-						<a href="/logos/#firm" class="food-menu__item">Фирменные блюда</a>
-						<a href="/logos/#drink" class="food-menu__item">Напитки</a>	
-					</nav>
+			<div class="food-menu__navwrap">
+				<div class="food-menu__nav" id="horizontal-scroller">
+					<div><a href="/logos/#cold" class="food-menu__item">Холодные закуски</a></div>
+					<div><a href="/logos/#hot" class="food-menu__item">Горячие закуски</a></div>
+					<div><a href="/logos/#meat" class="food-menu__item">Мясные блюда</a></div>
+					<div><a href="/logos/#soup" class="food-menu__item">Супы</a></div>
+					<div><a href="/logos/#fish" class="food-menu__item">Рыбные блюда</a></div>
+					<div><a href="/logos/#grill" class="food-menu__item">Гриль меню</a></div>
+					<div><a href="/logos/#firm" class="food-menu__item">Фирменные блюда</a></div>
+					<div><a href="/logos/#drink" class="food-menu__item">Напитки</a></div>
 				</div>
 			</div>
 		</div>
+	</div>
 </section>
 
 <main>
@@ -203,7 +215,6 @@
 
 <footer>
 	<div class="container">
-		<div id="button-up">▲</div>
 		<div class="footer__area">
 			<img src="img/logo.svg" alt="">
 			<p class="footer__text">
