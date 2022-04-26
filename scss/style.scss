@@ -1318,6 +1318,9 @@ footer {
 	.container {
 		max-width: 700px;
 	}
+	.sticky + main {
+		padding: 0;
+	}
 	.intro {
 		.intro-text {
 			top: 200px;
